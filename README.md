@@ -1,3 +1,8 @@
+<p align="center" ><img height="400px" src="https://github.com/perdianto27/bmg_ecofood/blob/master/ss.png> </p>
+<br>
+<p align="center" ><img height="400px" src="https://github.com/perdianto27/bmg_ecofood/blob/master/ss-home.png"> </p>
+<br>
+
 # Tech :
 - PHP 7
 - Laravel 7 
