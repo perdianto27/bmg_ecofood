@@ -179,6 +179,10 @@
 
   function add()
   {
+    if (CKEDITOR.instances.isi) {
+      CKEDITOR.instances.isi.destroy();
+    }
+    CKEDITOR.replace('isi');
     save_method = 'add';
     $('#form')[0].reset(); // reset form on modals
     $('.form-group').removeClass('has-error'); // clear error class
@@ -242,7 +246,7 @@
         url = "{{ route('artikel-ajax-update')}}";
     }
 
-    const isi = CKEDITOR.instances.isi.getData();
+    const isi = CKEDITOR.instances.isi.document.getBody().getText();
     let values = $('#form').serialize()
     values += "&isi=" + isi;
     // ajax adding data to database
