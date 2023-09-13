@@ -93,7 +93,7 @@
     <div class="row g-5">
       <div class="col-md-8">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">
-          From the Firehose
+          New Post
         </h3>
         @section('article')
 
@@ -105,7 +105,7 @@
       </nav>
     </div>
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem;">
+        <div class="position-sticky " style="top: 2rem;">
         @section('widget')
 
         @show

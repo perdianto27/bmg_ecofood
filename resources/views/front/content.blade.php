@@ -17,14 +17,12 @@
 
 @section('article')
 <div id="thumbnail" class="row mb-2">
-<article class="blog-post">
-  <h2 name="article-judul" class="blog-post-title"></h2>
-  <b name="article-penulis" class="blog-post-meta"></b>
-  <p name="article-date" class="blog-post-meta"></p>
-
-  <p name="article-isi" >This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-  <hr>
-</article>
+  <article class="blog-post">
+    <h2 name="article-judul" class="blog-post-title"></h2>
+    <b name="article-penulis" class="blog-post-meta"></b>
+    <p name="article-date" class="blog-post-meta"></p>
+    <p name="article-isi" ></p>
+  </article>
 </div>
 @endsection
 
@@ -35,30 +33,19 @@
 
 @section('widget')
 <div class="p-4">
-  <h4 class="fst-italic">About</h4>
+  <h4 class="fst-italic border-bottom">About</h4>
   <p>Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
 </div>
 
 <div class="p-4">
-  <h4 class="fst-italic">Archives</h4>
-  <ol class="list-unstyled mb-0">
-    <li><a href="#">March 2021</a></li>
-    <li><a href="#">February 2021</a></li>
-    <li><a href="#">January 2021</a></li>
-    <li><a href="#">December 2020</a></li>
-    <li><a href="#">November 2020</a></li>
-    <li><a href="#">October 2020</a></li>
-    <li><a href="#">September 2020</a></li>
-    <li><a href="#">August 2020</a></li>
-    <li><a href="#">July 2020</a></li>
-    <li><a href="#">June 2020</a></li>
-    <li><a href="#">May 2020</a></li>
-    <li><a href="#">April 2020</a></li>
+  <h4 class="fst-italic border-bottom">Trending</h4>
+  <ol id="widget-trending" class="list-unstyled mb-0">
+    
   </ol>
 </div>
 
 <div class="p-4">
-  <h4 class="fst-italic">Elsewhere</h4>
+  <h4 class="fst-italic border-bottom">Soacial</h4>
   <ol class="list-unstyled">
     <li><a href="#">GitHub</a></li>
     <li><a href="#">Twitter</a></li>
@@ -105,7 +92,8 @@
           </div>
           </div>
           </div>`;
-
+          const widget = `<li><a href="#">${artikel.judul_artikel}</a></li>`;
+          $("#widget-trending").append(widget);
           $("#thumbnail").append(thumbnail);
         }              
       },
