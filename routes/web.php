@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@home')->name('home');
-Route::get('/artikel', 'ArtikelController@index')->name('artikel');
+Route::get('/home', 'HomeController@home')->name('home')->middleware('auth');
+Route::get('/admin/artikel', 'ArtikelController@index')->name('artikel')->middleware('auth');
 Route::post('/artikels', 'ArtikelController@getArtikel')->name('artikels');
 Route::post('/artikel/ajax_list', 'ArtikelController@ajax_list')->name('artikel-ajax-list');
 Route::post('/artikel/ajax_create', 'ArtikelController@create')->name('artikel-ajax-create');

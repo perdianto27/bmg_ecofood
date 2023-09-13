@@ -81,7 +81,6 @@
       success: function(response)
       {
         artikels = response.artikel;
-        console.log('artikel', response.artikel[0]);
         const featured = response.artikel[0];
         $('[name="featured-judul"]').text(featured.judul_artikel);
         $('[name="featured-isi"]').text(featured.isi_artikel);
