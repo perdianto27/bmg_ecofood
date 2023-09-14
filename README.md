@@ -16,9 +16,7 @@
 - Clone project atau download
 - copy dan rename file .env.example menjadi .env
 - Jalankan perintah : <br>
-“Composer dumpautoload”
-“Composer update –no-scripts” 
-“Composer install”
+“composer install”<br>
 - Import dan Setting database
 - jika muncul error seperti ini, <br>
 "No application encryption key has been specified." <br>
@@ -26,3 +24,8 @@ Berarti key laravel anda salah untuk, memperbaikinya tinggal di
 "php artisan key:generate"
 - Silahkan jalankan projectnya <br>
 "php artisan serve"
+
+Note:
+Jika terjadi error lain, jalankan perintah ini
+“composer dumpautoload”<br>
+“composer update –no-scripts” <br>
