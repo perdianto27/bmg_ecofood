@@ -14,13 +14,14 @@
 
 # Cara Menjalankan
 - Clone project atau download
+- copy dan rename file .env.example menjadi .env
 - Jalankan perintah : <br>
 “Composer dumpautoload”
 “Composer update –no-scripts” 
 “Composer install”
 - Import dan Setting database
 - jika muncul error seperti ini, <br>
-"No supported encrypter found. The cipher and / or key length are invalid." <br>
+"No application encryption key has been specified." <br>
 Berarti key laravel anda salah untuk, memperbaikinya tinggal di
 "php artisan key:generate"
 - Silahkan jalankan projectnya <br>
