@@ -26,6 +26,6 @@ Berarti key laravel anda salah untuk, memperbaikinya tinggal di
 "php artisan serve"
 
 Note:
-Jika terjadi error lain, jalankan perintah ini
+Jika terjadi error lain, jalankan perintah ini<br>
 “composer dumpautoload”<br>
 “composer update –no-scripts” <br>

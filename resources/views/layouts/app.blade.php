@@ -43,7 +43,7 @@
                         Data
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ url('/artikel') }}">Artikel</a>
+                        <a class="dropdown-item" href="{{ url('admin/artikel') }}">Artikel</a>
                         <div class="dropdown-divider"></div>
                         <!-- <a class="dropdown-item" href="#">Admin</a> -->
                       </div>
