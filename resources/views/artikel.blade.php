@@ -175,6 +175,8 @@
       }
 
     });
+    // Add the CSS class 'row-height' to all DataTable rows
+    table.rows().nodes().to$().addClass('row-height');
   });
 
   function add()

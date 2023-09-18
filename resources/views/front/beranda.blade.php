@@ -22,6 +22,10 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        .bg-dark {
+          background-image: url('/images/featured-bg.jpg');
+          background-size: cover;
+        }
       }
     </style>
     <!-- jQuery -->
@@ -93,7 +97,7 @@
     <div class="row g-5">
       <div class="col-md-8">
         <h3 class="pb-4 mb-4 fst-italic border-bottom">
-          New Post
+          The Latest Post
         </h3>
         @section('article')
 
